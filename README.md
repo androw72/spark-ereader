@@ -5,11 +5,11 @@ Ereader library info: http://wyolum.com/wyolum-ereader-library/
 
 repaper dev board connector:
 Pin Number	Description	Color
-1.	Vcc 3V	Red	3.3V*	
-2.	(LED1)	White	-	-	-
-3.	(UART_RX)	Grey	-	-	-
-4.	(UART_TX)	Purple	-	-	-
-5.	(SW2)	Blue	-	-	-
+1.	Vcc 3V	Red	3.3V*
+2.	(LED1)	White	-
+3.	(UART_RX)	Grey	
+4.	(UART_TX)	Purple	
+5.	(SW2)	Blue	-
 6.	Temperature	Green	A0
 7.	SPI_CLK	Yellow	A3
 8.	BUSY	Orange	D7
@@ -20,8 +20,8 @@ Pin Number	Description	Color
 13.	BORDER_CONTROL	Grey	D3
 14.	SPI_MISO	Purple	A4
 15.	SPI_MOSI	Blue	A5
-16.	(RST/SBWTDIO)	Green	-	-	-
-17.	(TEST/SBWTCK)	Yellow	-	-	-
+16.	(RST/SBWTDIO)	Green	-
+17.	(TEST/SBWTCK)	Yellow	-
 18.	FLASH_CS	Orange	D1
 19.	/EPD_CS	Brown	D0
 20.	GND	Black	GND
@@ -33,7 +33,6 @@ DI: MISO A4
 CLK:SCK A3
 GND GND
 VCC (3.3v) 3V3
-
 
 
 
