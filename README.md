@@ -1,5 +1,5 @@
 # spark-ereader
-Wyolums ereader code on a spark core. A 'wif' file is read from the sd-card and displayed on the epaper display.
+Wyolums ereader code on a spark core. A 'wif' file is read from the sd-card and displayed on the epaper display. The code is compiled locally on spark. And WLAN is turned off.
 
 Hardware:  
 Repaper display development board and a adafruit sd-card breakout board is used together with the spark-core.
