@@ -4,7 +4,7 @@ Wyolums ereader code on a spark core. A 'wif' file is read from the sd-card and 
 The spark core is controlled from the serial interface. The display is initialized by sending a character on the serial port.
 
 Hardware:  
-Repaper display development board and a adafruit sd-card breakout board is used together with the spark-core.
+Repaper display development board and a adafruit sd-card breakout board is used together with the spark-core. Note! this code only support the COG V1 EPD.
 
 Ereader library and sd card info on http://wyolum.com/wyolum-ereader-library/
 
