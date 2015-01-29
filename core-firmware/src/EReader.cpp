@@ -94,9 +94,7 @@ void EReader::spi_detach(){
 }
 
 // call in arduino setup function
-void EReader::setup2(EPD_size size){
-Serial.print("EReader::setup!!");
-}
+
 
 void EReader::setup(EPD_size size){
 Serial.println("EReader::setup!!");
