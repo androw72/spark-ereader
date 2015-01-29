@@ -72,6 +72,14 @@ class EReader{
   void _erase();
   void _draw();
  public:
+     
+         void image_flash( const unsigned char *image)           // read image from flash
+    {
+        EPD.begin();
+        EPD.image(image);
+        //EPD.clear();
+        EPD.end();
+    } 
   bool attached; // true if spi display is ready, false if "detached"
   bool initialized;
   EPD_Class EPD;
@@ -92,7 +100,7 @@ class EReader{
 
   // call in arduino setup function
   void setup(EPD_size size);
-  void setup2(EPD_size size);
+  
   
 
   // clear the display

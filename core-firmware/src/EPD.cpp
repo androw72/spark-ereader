@@ -371,7 +371,9 @@ void EPD_Class::frame_fixed(uint8_t fixed_value, EPD_stage stage) {
 
 void EPD_Class::frame_data(const uint8_t *image, EPD_stage stage){
   for (uint8_t line = 0; line < this->lines_per_display ; ++line) {
-    this->line(line, &image[line * this->bytes_per_line], 0, true, stage);
+    // this->line(line, &image[line * this->bytes_per_line], 0, true, stage);
+        // progmem read false - spark core
+      this->line(line, &image[line * this->bytes_per_line], 0, false, stage);
   }
 }
 
@@ -455,8 +457,8 @@ void EPD_Class::line(uint16_t line, const uint8_t *data, uint8_t fixed_value, bo
       // AVR has multiple memory spaces
       uint8_t pixels;
       if (read_progmem) {
-	//pixels = pgm_read_byte_near(data + b - 1) & 0xaa;
-          pixels = 0;
+	// pixels = pgm_read_byte_near(data + b - 1) & 0xaa;
+        //  pixels = 0; //anbr
       } else {
 	pixels = data[b - 1] & 0xaa;
       }
@@ -498,8 +500,8 @@ void EPD_Class::line(uint16_t line, const uint8_t *data, uint8_t fixed_value, bo
       // AVR has multiple memory spaces
       uint8_t pixels;
       if (read_progmem) {
-	//pixels = pgm_read_byte_near(data + b) & 0x55;
-          pixels = 0;
+	// pixels = pgm_read_byte_near(data + b) & 0x55;
+        //  pixels = 0; //anbr
       } else {
 	pixels = data[b] & 0x55;
       }
