@@ -22,6 +22,8 @@
 #include "application.h"
 #include "sd-card-library.h"
 #include "ereader.h"
+#include "picture.h"
+#define IMAGEFILE   image_270
 
 // set up variables using the SD utility library functions:
 Sd2Card card;
@@ -45,10 +47,14 @@ void setup()
   
   //Serial.print("\nEreader...\n");
   ereader.setup(EPD_2_7);
+
+  //ereader.sleep(4000);
+  ereader.image_flash(IMAGEFILE);
+  ereader.sleep(2000);
   //ereader.display_wif("/IMAGES/LENA.WIF", 0, 0);
   ereader.display_wif("/IMAGES/WYOLUM.WIF", 0, 0);
   ereader.show();
-  ereader.sleep(4000);
+
   
   
   Serial.print("\nmy_test: nInitializing SD card...");
