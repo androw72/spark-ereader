@@ -50,10 +50,13 @@ void setup()
 
   //ereader.sleep(4000);
   ereader.image_flash(IMAGEFILE);
-  ereader.sleep(2000);
+  delay(2000);
   //ereader.display_wif("/IMAGES/LENA.WIF", 0, 0);
+  //ereader.wake();
   ereader.display_wif("/IMAGES/WYOLUM.WIF", 0, 0);
   ereader.show();
+  ereader.sleep(1000);
+  
 
   
   
