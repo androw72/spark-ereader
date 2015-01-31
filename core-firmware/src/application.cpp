@@ -49,13 +49,13 @@ void setup()
   ereader.setup(EPD_2_7);
 
   //ereader.sleep(4000);
+  ereader.clear();
   ereader.image_flash(IMAGEFILE);
-  delay(2000);
+  delay(1000);
   //ereader.display_wif("/IMAGES/LENA.WIF", 0, 0);
   //ereader.wake();
   ereader.display_wif("/IMAGES/WYOLUM.WIF", 0, 0);
   ereader.show();
-  ereader.sleep(1000);
   ereader.EPD.end();
   
 

@@ -97,7 +97,7 @@ void EReader::spi_detach(){
 
 
 void EReader::setup(EPD_size size){
-Serial.println("EReader::setup!!");
+//Serial.println("EReader::setup!!");
 
   attached = false;
   pinMode(SD_CS, OUTPUT);
@@ -142,24 +142,24 @@ Serial.println("EReader::setup!!");
   digitalWrite(EPD_EPD_CS, LOW);
   digitalWrite(EPD_FLASH_CS, HIGH);
 
-Serial.println("EReader::setup2");
+
   
   SPI.begin();
 
-Serial.println("EReader::setup_spi_begin done");
+//Serial.println("EReader::setup_spi_begin done");
 
   set_spi_for_epd();
 
   display_file = SD.open("__EPD__.DSP", FILE_WRITE);
 
-Serial.println("EReader::setup_SD.open done");
+//Serial.println("EReader::setup_SD.open done");
 
   if(!display_file){
     Serial.println("Could not open file: __EPD__.DSP");
     error(FILE_NOT_FOUND_CODE);
   }   
 
-Serial.println("EReader::setup3");
+
  
   unifont_file = SD.open("unifont.wff");
   if(!unifont_file){
@@ -475,6 +475,18 @@ void EReader::show(){
   _draw();
   clear();
 }
+
+   void EReader::image_flash( const unsigned char *image){           // read image from flash
+        EPD.begin(); 
+        EPD.clear();
+        delay(1000);
+        
+        EPD.image(image);
+        EPD.end();
+        
+        
+    } 
+
 
 void EReader::sleep(uint32_t delay_ms){
   spi_detach();

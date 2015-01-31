@@ -74,13 +74,8 @@ class EReader{
   void _draw();
  public:
      
-         void image_flash( const unsigned char *image)           // read image from flash
-    {
-        EPD.begin();
-        EPD.image(image);
-        //EPD.clear();
-        EPD.end();
-    } 
+  void image_flash( const unsigned char *image);           // read image from flash
+
   bool attached; // true if spi display is ready, false if "detached"
   bool initialized;
   EPD_Class EPD;
