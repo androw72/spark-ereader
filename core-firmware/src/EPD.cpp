@@ -99,7 +99,7 @@ void EPD_Class::setup(EPD_size size,
   }
 
   case EPD_2_7: {
-    this->stage_time = 630; // milliseconds
+    this->stage_time = 630 / 4; // milliseconds
     this->lines_per_display = 176;
     this->dots_per_line = 264;
     this->bytes_per_line = 264 / 8;
@@ -389,6 +389,7 @@ void EPD_Class::frame_cb(uint32_t address, EPD_reader *reader, EPD_stage stage) 
 
 void EPD_Class::frame_fixed_repeat(uint8_t fixed_value, EPD_stage stage) {
   long stage_time = this->factored_stage_time;
+  
   do {
     unsigned long t_start = millis();
     this->frame_fixed(fixed_value, stage);
