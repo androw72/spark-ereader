@@ -17,6 +17,7 @@
 //#include <inttypes.h>
 #include "EPD.h"
 #include "sd-card-library.h"
+#define SLOW 1 // better image quality
 
 // set HW_VERSION to 0 when following EPD schematic
 #define HW_VERSION3

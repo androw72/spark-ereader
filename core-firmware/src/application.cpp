@@ -56,6 +56,7 @@ void setup()
   ereader.display_wif("/IMAGES/WYOLUM.WIF", 0, 0);
   ereader.show();
   ereader.sleep(1000);
+  ereader.EPD.end();
   
 
   
