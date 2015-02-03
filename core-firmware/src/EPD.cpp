@@ -99,7 +99,7 @@ void EPD_Class::setup(EPD_size size,
   }
 
   case EPD_2_7: {
-    this->stage_time = 630 / 4; // milliseconds
+    this->stage_time = 630 / 2; // milliseconds
     this->lines_per_display = 176;
     this->dots_per_line = 264;
     this->bytes_per_line = 264 / 8;
