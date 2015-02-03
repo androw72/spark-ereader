@@ -548,7 +548,7 @@ void EReader::SD_image_reader(File imgFile, void *buffer, uint32_t address,
 // #define SLOW
 
 void EReader::_erase(){
-  int temperature; // TJS: not used in badge (assume room temperature)
+  int temperature=25; // TJS: not used in badge (assume room temperature)
   // int temperature = S5813A.read();
   // Serial.print("Temperature = ");
   // Serial.print(temperature);
