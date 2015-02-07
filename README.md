@@ -19,7 +19,7 @@ Pin Number	Description	Color
 6.	Temperature	Green	A0
 7.	SPI_CLK	Yellow	A3
 8.	BUSY	Orange	D7
-9.	PWM	Brown	D5
+9.	PWM	Brown	A7
 10.	/RESET	Black	D6
 11.	PANEL_ON	Red	D2
 12.	DISCHARGE	White	D4
