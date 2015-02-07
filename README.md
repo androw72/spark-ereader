@@ -7,7 +7,7 @@ Hardware:
 Repaper display development board and a adafruit sd-card breakout board is used together with the spark-core. Note! this code only support the COG V1 EPD.
 
 Ereader library and sd card info on http://wyolum.com/wyolum-ereader-library/  
-SD card library: https://github.com/technobly/SparkCore-SD
+SD card library: https://github.com/mumblepins/sd-card-library based on https://github.com/technobly/SparkCore-SD
 
 Pin Number	Description	Color
 
