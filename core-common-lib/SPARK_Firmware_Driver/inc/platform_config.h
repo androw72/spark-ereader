@@ -28,7 +28,7 @@
 #define __PLATFORM_CONFIG_H
 
 /* Uncomment the line below to enable WLAN, WIRING, SFLASH and RTC functionality */
-//#define SPARK_WLAN_ENABLE
+#define SPARK_WLAN_ENABLE
 #define SPARK_WIRING_ENABLE
 #define SPARK_SFLASH_ENABLE
 #define SPARK_RTC_ENABLE

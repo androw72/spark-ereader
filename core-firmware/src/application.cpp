@@ -41,6 +41,7 @@ const uint8_t clockPin = A3;
 
 uint16_t UNICODE_MSG[11] = {25105, 20204, 29233, 30717, 36882, 31185, 25216, 0};
 
+SYSTEM_MODE(AUTOMATIC);
 
 void setup()
 {
