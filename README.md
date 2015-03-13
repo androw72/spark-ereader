@@ -1,13 +1,16 @@
 # spark-ereader
-Wyolums ereader code run on a spark core. A 'wif' file is read from the sd-card and displayed on the epaper display. Instruction on how to setup the EPD can be found [here](https://github.com/androw72/setup_instruction_spark_ereader)    
+Wyolums ereader code run on a spark core. A 'wif' file is read from the sd-card and displayed on the epaper display. Instruction on how to setup the EPD can be found [here](https://github.com/androw72/setup_instruction_spark_ereader)  
 
-Hardware:  
+__Compiling with Spark Dev__    
+Download and open the 'spark_dev_work' folder in spark dev and compile.
+
+__Hardware__   
 Repaper display development board and a adafruit sd-card breakout board is used together with the spark-core. Note! this code only support the COG V1 EPD.
 
 Ereader library and sd card info on http://wyolum.com/wyolum-ereader-library/  
 SD card library: https://github.com/mumblepins/sd-card-library based on https://github.com/technobly/SparkCore-SD
 
-Pin Number	Description	Color
+__Pin Number	Description	Color__
 
 1.	Vcc 3V	Red	3.3V*
 2.	(LED1)	White	-	-	-
